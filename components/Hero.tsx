@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Brain, Database, Share2 } from "lucide-react";
+import Link from "next/link";
 
 export function Hero({ onOpenModal }: { onOpenModal: () => void }) {
     return (
@@ -60,9 +61,9 @@ export function Hero({ onOpenModal }: { onOpenModal: () => void }) {
                         Start Building
                         <ArrowRight className="w-4 h-4" />
                     </button>
-                    <button className="px-8 py-4 text-sm font-bold text-white bg-[#1a1a1a] border border-[#333] hover:bg-[#2a2a2a] rounded-lg transition-all font-mono uppercase tracking-wide">
+                    <Link href="/docs" className="px-8 py-4 text-sm font-bold text-white bg-[#1a1a1a] border border-[#333] hover:bg-[#2a2a2a] rounded-lg transition-all flex items-center justify-center font-mono uppercase tracking-wide">
                         Documentation
-                    </button>
+                    </Link>
                 </motion.div>
             </div>
 

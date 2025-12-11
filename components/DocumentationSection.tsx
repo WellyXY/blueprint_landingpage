@@ -1,6 +1,7 @@
 "use client";
 
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 export function DocumentationSection() {
     return (
@@ -32,9 +33,9 @@ export function DocumentationSection() {
                             ))}
                         </div>
 
-                        <button className="mt-10 px-8 py-4 text-sm font-bold text-white bg-[#1a1a1a] border border-[#333] hover:bg-[#2a2a2a] rounded-lg transition-all font-mono uppercase tracking-wide">
-                            View Full Docs
-                        </button>
+                        <Link href="/docs" className="inline-block mt-10 px-8 py-4 text-sm font-bold text-white bg-[#1a1a1a] border border-[#333] hover:bg-[#2a2a2a] rounded-lg transition-all font-mono uppercase tracking-wide">
+                            Read Full Documentation
+                        </Link>
                     </div>
 
                     <div className="lg:w-1/2 w-full">
