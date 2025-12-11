@@ -13,7 +13,7 @@ export function Navbar({ onOpenModal }: { onOpenModal: () => void }) {
         >
             <div className="flex items-center gap-2">
                 <div className="w-8 h-8 relative">
-                    <img src="/pika-icon.png" alt="Pika Icon" className="w-full h-full object-contain invert" />
+                    <img src="/pika-icon.png" alt="Pika Icon" className="w-full h-full object-contain" />
                 </div>
                 <span className="text-lg font-bold tracking-tight text-white font-mono uppercase">Pika</span>
             </div>
