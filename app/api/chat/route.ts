@@ -2,12 +2,16 @@ import { NextResponse } from "next/server";
 import OpenAI from "openai";
 import { characters } from "@/lib/data";
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
 export async function POST(req: Request) {
   try {
+    const apiKey = process.env.OPENAI_API_KEY;
+    if (!apiKey) {
+      return NextResponse.json(
+        { error: "Missing OPENAI_API_KEY on the server" },
+        { status: 500 }
+      );
+    }
+
     const { messages, characterId } = await req.json();
 
     const character = characters.find((c) => c.id === characterId);
@@ -26,6 +30,8 @@ export async function POST(req: Request) {
       3. Your responses should be concise, immersive, and engaging.
       4. You are chatting with a user in a "Neural Link" interface.
     `;
+
+    const openai = new OpenAI({ apiKey });
 
     const completion = await openai.chat.completions.create({
       model: "gpt-4o",
