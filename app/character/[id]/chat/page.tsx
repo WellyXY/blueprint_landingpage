@@ -2,7 +2,11 @@
 
 import { useParams, useRouter } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
+<<<<<<< HEAD
 import { ArrowLeft, Send, MoreHorizontal, Sparkles, User } from "lucide-react";
+=======
+import { ArrowLeft, Send, MoreHorizontal, Bot, User, Sparkles } from "lucide-react";
+>>>>>>> 783b19a (fix: bind next.js to 0.0.0.0 and use PORT env var for railway deploy)
 import { characters } from "@/lib/data";
 
 interface Message {
@@ -182,4 +186,7 @@ export default function ChatInterface() {
         </div>
     );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 783b19a (fix: bind next.js to 0.0.0.0 and use PORT env var for railway deploy)
