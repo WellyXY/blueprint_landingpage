@@ -14,15 +14,15 @@ export function DocumentationSection() {
                             <span className="text-[#cbcbcb]">Powerful Identity.</span>
                         </h2>
                         <p className="text-gray-400 text-lg font-mono mb-8">
-                            三步快速接入：安裝 SDK、定義 character.json、初始化 client 並嵌入前端／Bot／遊戲。Pika 會幫你處理記憶、上下文與跨平台同步。
+                            Integrate in 3 steps: Install SDK, define character.json, initialize client & embed. Pika handles memory, context & cross-platform sync.
                         </p>
 
                         <div className="space-y-4">
                             {[
-                                "安裝 SDK：npm i @pika/sdk（前端），或在 Discord/Unity 引入對應套件",
-                                "定義 character.json：個性、語氣、記憶策略、外觀與資產引用",
-                                "初始化 client：帶入 API Key / Webhook，開啟 persistent memory stream",
-                                "嵌入入口：Web Widget / Discord Bot / Unity Prefab，共用同一個身份"
+                                "Install SDK: npm i @pika/sdk (Frontend), or import for Discord/Unity",
+                                "Define character.json: Personality, voice, memory, appearance & assets",
+                                "Initialize client: API Key / Webhook to open persistent memory stream",
+                                "Embed: Web Widget / Discord Bot / Unity Prefab sharing one identity"
                             ].map((item, i) => (
                                 <div key={i} className="flex items-center gap-3">
                                     <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center">
