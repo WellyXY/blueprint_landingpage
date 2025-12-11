@@ -4,7 +4,7 @@ import { Check } from "lucide-react";
 
 export function DocumentationSection() {
     return (
-        <section id="docs" className="py-24 bg-[#050505] border-t border-[#333]">
+        <section id="docs" className="py-24 bg-[#050505]">
             <div className="container px-4 mx-auto">
                 <div className="flex flex-col lg:flex-row gap-16 items-start">
                     <div className="lg:w-1/2">
